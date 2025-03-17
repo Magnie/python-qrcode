@@ -1,3 +1,6 @@
+import decimal
+decimal.getcontext().traps[decimal.FloatOperation] = True
+
 import io
 from unittest import mock
 
